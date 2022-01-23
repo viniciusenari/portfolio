@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="../static/style.css" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='bootstrap/css/bootstrap.css')}}"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
     <link
       rel="icon"
       type="image/png"
@@ -38,12 +41,12 @@
         <nav id="navbar" class="nav-menu">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#home"
                 ><i class="bi bi-house" aria-hidden="true"></i>Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#"
+              <a class="nav-link" aria-current="page" href="#about"
                 ><i class="bi bi-person" aria-hidden="true"></i>About</a
               >
             </li>
@@ -90,7 +93,95 @@
               class="bi bi-arrow-down text-white pe-2 fs-2"
               aria-hidden="true"
             ></i>
-            <a href="">Scroll Down</a>
+            <a href="#about">Scroll Down</a>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="container mt-5">
+        <div class="row w-100">
+          <div class="col-md-12">
+            <h2 class="pt-3">About</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              semper hendrerit vestibulum. Nam et metus sit amet lorem fermentum
+              semper id eu justo. Nunc ante justo, euismod eget malesuada at,
+              fermentum at libero. Suspendisse rutrum lorem at tempor auctor.
+              Fusce ac orci in lacus venenatis imperdiet ac id lorem. Praesent
+              in consectetur purus. Nullam nulla purus, venenatis a tincidunt
+              et, aliquet in risus. Sed tristique in leo ut efficitur. Nullam ut
+              eros arcu. Pellentesque nulla elit, posuere eget ultrices nec,
+              vulputate sit amet augue. Ut egestas, sem sit amet interdum
+              suscipit, metus erat molestie eros, vitae congue tellus turpis vel
+              dui. Phasellus et dictum felis, sit amet dictum urna. Vestibulum
+              sagittis ligula in fermentum posuere.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <img
+              class="img-fluid shadow"
+              src="{{url_for('static',filename='img/profile.jpg')}}"
+              alt="Vinicius' profile picture"
+            />
+          </div>
+          <div class="col-md-8">
+            <h3>Software Engineer</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              fringilla volutpat ex, id ultricies nunc varius in. Duis at
+              lectus.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush fs-5">
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush fs-5">
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>s
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                  <li class="list-group-item">
+                    Something: <span class="fw-lighter">Cras justo odio</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-3 mb-3">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                finibus leo arcu, ac commodo nunc lacinia non. Nulla ullamcorper
+                varius rutrum. Nullam odio nulla, sagittis quis hendrerit ut,
+                iaculis eget ante. Donec sed ipsum felis. Aenean ut ex molestie
+                mauris ornare sodales quis eget ligula. Vestibulum vel mi odio.
+                In et mattis mauris.
+              </p>
+            </div>
           </div>
         </div>
       </section>
