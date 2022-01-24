@@ -186,3 +186,17 @@ i.menu-mobile {
 .section-bg {
   background-color: #eff5ff;
 }
+
+.carousel-control-prev {
+  margin-left: -2.5rem;
+  width: 32px;
+}
+
+.carousel-control-next {
+  margin-right: -2.5rem;
+  width: 32px;
+}
+
+.carousel-indicators {
+  margin-bottom: -35px;
+}

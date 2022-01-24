@@ -56,12 +56,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="bi bi-file-earmark" aria-hidden="true"></i>Resume</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
+              <a class="nav-link" href="#projects"
                 ><i class="bi bi-collection" aria-hidden="true"></i>Projects</a
               >
             </li>
@@ -415,6 +410,302 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="mt-5">
+        <div class="container pb-5 pt-5" data-anime="left">
+          <h2 class="pb-4">Projects</h2>
+
+          <div
+            id="carouselProjects"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselProjects"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselProjects"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselProjects"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        class="card-img-top"
+                        alt="Project 1 Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Fusce fringilla volutpat
+                          ex, id ultricies nunc varius in. Duis at lectus.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-dark me-3"
+                            ><i class="bi bi-github"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-primary me-3"
+                            ><i class="bi bi-link-45deg"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-danger"
+                            ><i class="bi bi-youtube"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        class="card-img-top img-fluid w-100"
+                        alt="Project 2 Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Fusce fringilla volutpat
+                          ex, id ultricies nunc varius in. Duis at lectus.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-dark me-3"
+                            ><i class="bi bi-github"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-primary me-3"
+                            ><i class="bi bi-link-45deg"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-danger"
+                            ><i class="bi bi-youtube"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        class="card-img-top img-fluid w-100"
+                        alt="Project 3 Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Fusce fringilla volutpat
+                          ex, id ultricies nunc varius in. Duis at lectus.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-dark me-3"
+                            ><i class="bi bi-github"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-primary me-3"
+                            ><i class="bi bi-link-45deg"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-danger"
+                            ><i class="bi bi-youtube"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        class="card-img-top img-fluid w-100"
+                        alt="Project 4 image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <p class="card-text">
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Fusce fringilla volutpat
+                          ex, id ultricies nunc varius in. Duis at lectus.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-dark me-3"
+                            ><i class="bi bi-github"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-primary me-3"
+                            ><i class="bi bi-link-45deg"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-danger"
+                            ><i class="bi bi-youtube"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        class="card-img-top img-fluid w-100"
+                        alt="Project 5 Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Project 5</h5>
+                        <p class="card-text">
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Fusce fringilla volutpat
+                          ex, id ultricies nunc varius in. Duis at lectus.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-dark me-3"
+                            ><i class="bi bi-github"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-primary me-3"
+                            ><i class="bi bi-link-45deg"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-danger"
+                            ><i class="bi bi-youtube"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <img
+                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        class="card-img-top img-fluid w-100"
+                        alt="Project 6 Image"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Project 6</h5>
+                        <p class="card-text">
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Fusce fringilla volutpat
+                          ex, id ultricies nunc varius in. Duis at lectus.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-dark me-3"
+                            ><i class="bi bi-github"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-primary me-3"
+                            ><i class="bi bi-link-45deg"></i
+                          ></a>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="btn btn-outline-danger"
+                            ><i class="bi bi-youtube"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselProjects"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselProjects"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </section>
