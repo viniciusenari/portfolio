@@ -42,3 +42,18 @@ const animeScroll = () => {
 window.addEventListener("scroll", () => {
   animeScroll();
 });
+
+/* Activate loading button */
+
+const btnSend = document.querySelector("#btn-send");
+const btnSendLoader = document.querySelector("#btn-send-loader");
+
+btnSend.addEventListener("click", () => {
+  btnSendLoader.style.display = "block";
+  btnSend.style.display = "none";
+});
+
+/* Remove message after 5 seconds */
+setTimeout(() => {
+  document.querySelector("#alert").style.display = "none";
+}, 5000);

@@ -716,41 +716,61 @@
           <div class="row">
             <div class="col-md-12" data-anime="up">
               <div class="card p-5 h-100 shadow border-0">
-                <form class="row g-3">
+                <form class="row g-3" action="/send" method="POST">
                   <div class="col-md-6">
-                    <label for="inputName" class="form-label">Name</label>
+                    <label for="name" class="form-label">Name</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="inputName"
+                      id="name"
                       name="name"
                       placeholder="Enter your name"
+                      required
                     />
                   </div>
                   <div class="col-md-6">
-                    <label for="inputEmail" class="form-label">Email</label>
+                    <label for="email" class="form-label">Email</label>
                     <input
                       type="email"
                       class="form-control"
-                      id="inputEmail"
+                      id="email"
                       name="email"
                       placeholder="Enter your email"
+                      required
                     />
                   </div>
                   <div class="col-12">
-                    <label for="inputMessage" class="form-label">Message</label>
+                    <label for="message" class="form-label">Message</label>
                     <textarea
                       type="text"
                       class="form-control"
-                      id="inputMessage"
-                      placeholder="Write your message"
+                      id="message"
+                      placeholder="Write your message..."
                       name="message"
                       rows="10"
+                      required
                     ></textarea>
                   </div>
                   <div class="col-12 d-flex justify-content-center mt-5">
-                    <button type="submit" class="btn btn-outline-primary">
+                    <button
+                      id="btn-send"
+                      type="submit"
+                      class="btn btn-outline-primary"
+                    >
                       Send message
+                    </button>
+                    <button
+                      id="btn-send-loader"
+                      class="btn btn-primary"
+                      type="button"
+                      disabled
+                    >
+                      <span
+                        class="spinner-border spinner-border-sm"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
+                      Sending...
                     </button>
                   </div>
                 </form>
@@ -759,6 +779,23 @@
           </div>
         </div>
       </section>
+
+      {% with messages = get_flashed_messages() %} {% if messages %} {% for
+      message in messages %}
+      <div
+        id="alert"
+        class="alert alert-success alert-dismissible fade show"
+        role="alert"
+      >
+        <i class="bi bi-check-circle-fill"></i> {{ message }}
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      {% endfor %} {% endif %} {% endwith %}
     </main>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
