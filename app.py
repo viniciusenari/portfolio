@@ -29,6 +29,13 @@ class Contact:
 def index():
     return render_template('index.html')
 
+@app.route('/<lang>')
+def page_english(lang):
+    if lang == 'pt-br':
+        return render_template('index_pt.html')
+    else:
+        return render_template('index.html')
+
 @app.route('/send', methods=['GET','POST'])
 def send():
     if request.method == 'POST':
