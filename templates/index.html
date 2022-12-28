@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
     <link
       rel="icon"
@@ -94,6 +93,7 @@
           </div>
         </div>
       </section>
+
       <section id="about" class="container mt-5">
         <h2 class="pt-3 mb-3" data-anime="left">About</h2>
         <div class="row w-100">
@@ -120,6 +120,7 @@
           </div>
         </div>
       </section>
+      
       <section id="skills" class="mt-5 section-bg">
         <div class="container pb-5">
           <h2 class="pt-5" data-anime="left">Skills</h2>
@@ -154,11 +155,10 @@
                   <img title="Redis" src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white">
                   <img title="Unity" src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white">
                 </div>
-
-
           </div>
         </div>
       </section>
+
       <section id="projects" class="mt-5">
         <div class="container pb-5 pt-5" data-anime="left">
           <h2 class="pb-4">Projects</h2>
@@ -183,12 +183,12 @@
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
-              <button
+              <!-- <button
                 type="button"
                 data-bs-target="#carouselProjects"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
-              ></button>
+              ></button> -->
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
@@ -196,32 +196,30 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/twitchhighlightsbot.png')}}"
                         class="card-img-top"
-                        alt="Project 1 Image"
+                        alt="Twich Highlights Bot project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
+                        <h5 class="card-title col-md-6">Twitch Highlights Bot</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          This Python bot uses the Twitch API to gather the most viewed clips from the previous week for a specific game.
+                          It then combines these clips into a single compilation video using the Moviepy library and uploads the final product to YouTube using the YouTube API.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">APIs</span>
+                          <span class="badge text-bg-secondary mx-1">Google Cloud</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/twitch-highlights-bot"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
+                            href="https://www.youtube.com/@mostwatchedtwitchclips"
                             target="_blank"
                             class="btn btn-outline-danger"
                             ><i class="bi bi-youtube"></i
@@ -233,35 +231,29 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/videodirectoryapi.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 2 Image"
+                        alt="Video Directory API project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
+                        <h5 class="card-title">Video Directory API</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          REST API developed using the Django Rest Framework for indexing and retrieving videos information.
+                          Data is stored in MongoDB Atlas and cached using Redis to improve performance. The API allows users to search and
+                          access information about videos, including their URLs, metadata, and categories.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">Django Rest</span>
+                          <span class="badge text-bg-secondary mx-1">MongoDB</span>
+                          <span class="badge text-bg-secondary mx-1">Redis</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/VideoDirectoryAPI"
                             target="_blank"
-                            class="btn btn-outline-dark me-3"
+                            class="btn btn-outline-dark"
                             ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -272,35 +264,33 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/twitterweatherbot.png')}}"
                         class="card-img-top"
-                        alt="Project 1 Image"
+                        alt="Twitter Weather Bot project Image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
+                        <h5 class="card-title">Twitter Weather Bot</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Twitter bot that posts daily weather forecasts utilizing the Twitter API and the Open Weather API.
+                          The bot connects to the Open Weather API to retrieve current weather data and then formats and posts
+                          the forecasts to Twitter using the Twitter API.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">APIs</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/weather-bot"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
+                            href="https://twitter.com/climasaopaulo"
                             target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
+                            class="btn btn-outline-primary"
+                            ><i class="bi bi-twitter"></i
                           ></a>
                         </div>
                       </div>
@@ -309,35 +299,32 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/twitterprofileupdater.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 2 Image"
+                        alt="Twitter profile updater project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
+                        <h5 class="card-title">Twitter Profile Updater</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Python bot that utilizes the NASA Astronomy Picture of the Day API to update a Twitter profile with stunning images of outer space.
+                          The bot runs automatically on a daily basis thanks to its deployment on Heroku, a cloud platform for hosting web applications
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">APIs</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/twitter-profile-updater"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
+                            href="https://dev.to/viniciusenari/how-i-update-my-twitter-profile-automatically-using-python-5d57"
                             target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
+                            class="btn btn-outline-dark"
+                            ><i class="bi bi-file-richtext"></i
                           ></a>
                         </div>
                       </div>
@@ -346,40 +333,29 @@
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="10000">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/slideshowvideomaker.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 3 Image"
+                        alt="Slidershow Moviemaker project Image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
+                        <h5 class="card-title">Slideshow Moviemaker</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Python program that utilizes the moviepy library to create slideshow videos from a collection of images and an audio track.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/slideshow-videomaker"
                             target="_blank"
-                            class="btn btn-outline-dark me-3"
+                            class="btn btn-outline-dark"
                             ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -388,35 +364,35 @@
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/discourseium.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 4 image"
+                        alt="Discourseium project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 4</h5>
+                        <h5 class="card-title">Discourseium</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Chat web application inspired by Discord using React. The app allows users to communicate with each other
+                          in real-time through text. It also includes features like the user being able to use their github profiles, and emojis.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">JavaScript</span>
+                          <span class="badge text-bg-secondary mx-1">React</span>
+                          <span class="badge text-bg-secondary mx-1">NextJS</span>
+                          <span class="badge text-bg-secondary mx-1">Vercel</span>
+                          <span class="badge text-bg-secondary mx-1">Supabase</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/discourseium"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
+                            href="https://discourseium.vercel.app/"
                             target="_blank"
-                            class="btn btn-outline-primary me-3"
+                            class="btn btn-outline-primary"
                             ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -427,32 +403,25 @@
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/battlesim.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 3 Image"
+                        alt="Battlesim project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
+                        <h5 class="card-title">Battlesim</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Prototype of a turn-based strategy game developed using Unity. The game is a 2D top-down view of a battlefield where the player
+                          has to draft units and place them on the battlefield to fight against the enemy. Implemented features include unit movement using
+                          A* pathfinding, drag and drop unit placement, and unit's inventory management.
+
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">C#</span>
+                          <span class="badge text-bg-secondary mx-1">Unity</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-dark me-3"
-                            ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
+                            href="https://www.youtube.com/watch?v=zz7LfvRxUVE"
                             target="_blank"
                             class="btn btn-outline-danger"
                             ><i class="bi bi-youtube"></i
@@ -464,35 +433,25 @@
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/mountaincar.png')}}"
                         class="card-img-top img-fluid w-100"
                         alt="Project 4 image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 4</h5>
+                        <h5 class="card-title">Q-Learnign and SARSA Mountain Car</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Python code to run two differennt reinforcement learning algorithms on the Mountain Car environment from OpenAI Gym.
+                          The algorithms used were Q-Learning and SARSA.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/Q-Learning-and-SARSA-Mountain-Car-v0"
                             target="_blank"
-                            class="btn btn-outline-dark me-3"
+                            class="btn btn-outline-dark"
                             ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -501,7 +460,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="2000">
+              <!-- <div class="carousel-item" data-bs-interval="2000">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                   <div class="col">
                     <div class="card h-100">
@@ -654,7 +613,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <button
               class="carousel-control-prev"
@@ -683,6 +642,8 @@
           </div>
         </div>
       </section>
+
+
       
       <section id="contact" class="pt-5 pb-4 section-bg">
         <div class="container mb-5">
@@ -787,10 +748,10 @@
     </footer>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous">
+    </script>
     <script src="../static/script.js"></script>
   </body>
 </html>
