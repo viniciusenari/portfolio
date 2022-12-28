@@ -57,3 +57,17 @@ btnSend.addEventListener("click", () => {
 setTimeout(() => {
   document.querySelector("#alert").style.display = "none";
 }, 5000);
+
+/* Show more certificates */
+
+document.getElementById('show-more-button').addEventListener('click', function() {
+  var hiddenCards = document.getElementById('hidden-cards');
+  var showMoreButton = document.getElementById('show-more-button');
+  if (hiddenCards.style.display === 'none') {
+    hiddenCards.style.display = 'block';
+    showMoreButton.innerHTML = 'Show less';
+  } else {
+    hiddenCards.style.display = 'none';
+    showMoreButton.innerHTML = 'Show more';
+  }
+});
