@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
     <link
       rel="icon"
@@ -21,14 +20,31 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
     />
-    <title>Vinicius' Portfolio</title>
+    <!-- Primary Meta Tags -->
+    <title>Vinicius Enari</title>
+    <meta name="title" content="Vinicius Enari - Portfolio">
+    <meta name="description" content="I am a skilled software developer with a strong background in a variety of programming languages and technologies.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viniciusenari.herokuapp.com/">
+    <meta property="og:title" content="Vinicius Enari - Portfolio">
+    <meta property="og:description" content="I am a skilled software developer with a strong background in a variety of programming languages and technologies.">
+    <meta property="og:image" content="https://github.com/viniciusenari.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://viniciusenari.herokuapp.com/">
+    <meta property="twitter:title" content="Vinicius Enari - Portfolio">
+    <meta property="twitter:description" content="I am a skilled software developer with a strong background in a variety of programming languages and technologies.">
+    <meta property="twitter:image" content="https://github.com/viniciusenari.png">
   </head>
   <body>
     <i class="bi bi-list menu-mobile"></i>
 
     <aside id="header">
       <section class="profile">
-        <img src="../static/img/profile.jpg" alt="Profile picture" />
+        <img src="https://github.com/viniciusenari.png" alt="Profile picture" />
         <h1>Vinicius Enari</h1>
         <div class="social-icons mt-4 text-center">
           <a target="_blank" href="https://www.linkedin.com/in/vinicius-enari/"
@@ -63,6 +79,11 @@
               >
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#certificates"
+                ><i class="bi bi-award" aria-hidden="true"></i>Certificates</a
+              >
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact"
                 ><i class="bi bi-envelope" aria-hidden="true"></i>Contact</a
               >
@@ -94,328 +115,72 @@
           </div>
         </div>
       </section>
+
       <section id="about" class="container mt-5">
+        <h2 class="pt-3 mb-3" data-anime="left">About</h2>
         <div class="row w-100">
-          <div class="col-md-12" data-anime="down">
-            <h2 class="pt-3">About</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              semper hendrerit vestibulum. Nam et metus sit amet lorem fermentum
-              semper id eu justo. Nunc ante justo, euismod eget malesuada at,
-              fermentum at libero. Suspendisse rutrum lorem at tempor auctor.
-              Fusce ac orci in lacus venenatis imperdiet ac id lorem. Praesent
-              in consectetur purus. Nullam nulla purus, venenatis a tincidunt
-              et, aliquet in risus. Sed tristique in leo ut efficitur. Nullam ut
-              eros arcu. Pellentesque nulla elit, posuere eget ultrices nec,
-              vulputate sit amet augue. Ut egestas, sem sit amet interdum
-              suscipit, metus erat molestie eros, vitae congue tellus turpis vel
-              dui. Phasellus et dictum felis, sit amet dictum urna. Vestibulum
-              sagittis ligula in fermentum posuere.
-            </p>
+          <div class="col-md-8" data-anime="up">
+            <p>Hi there! My name is Vinicius Enari and I am a recent graduate of Minerva University,
+              where I earned my Bachelor of Science in Computer Science. In addition to my passion for programming,
+              I also enjoy playing video games, listening to music and playing the saxophone and electric guitar.</p>
+
+            <p>As a programmer, I have experience building and utilizing APIs, and building web applications with Flask, Django, and React.
+              I have strong skills in Python, as well as a solid understanding of JavaScript, C#, PHP, and Rust.
+              I am also open to learning any new language or technology if it is needed for a project or task.</p>
+
+            <p>I am always looking for new challenges and opportunities to learn and grow as a professional.
+              I am excited to apply my skills and experience to make a meaningful contribution to any team or project I am a part of.
+              Thank you for taking the time to visit my portfolio and learn more about me.</p>
           </div>
-        </div>
-        <div class="row mt-4">
           <div class="col-md-4">
             <img
               class="img-fluid shadow"
-              src="{{url_for('static',filename='img/profile.jpg')}}"
+              src="https://github.com/viniciusenari.png"
               alt="Vinicius' profile picture"
-              data-anime="left"
+              data-anime="right"
             />
           </div>
-          <div class="col-md-8" data-anime="right">
-            <h3>Software Engineer</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              fringilla volutpat ex, id ultricies nunc varius in. Duis at
-              lectus.
-            </p>
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="list-group list-group-flush fs-5">
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="list-group list-group-flush fs-5">
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>s
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                  <li class="list-group-item">
-                    Something: <span class="fw-lighter">Cras justo odio</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="row mt-3 mb-3">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                finibus leo arcu, ac commodo nunc lacinia non. Nulla ullamcorper
-                varius rutrum. Nullam odio nulla, sagittis quis hendrerit ut,
-                iaculis eget ante. Donec sed ipsum felis. Aenean ut ex molestie
-                mauris ornare sodales quis eget ligula. Vestibulum vel mi odio.
-                In et mattis mauris.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
+      
       <section id="skills" class="mt-5 section-bg">
         <div class="container pb-5">
-          <h2 class="pt-5">Skills</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            mattis augue sit amet erat pretium dapibus. Nam nisi justo, rhoncus
-            non porta id, viverra sit amet massa. Mauris porttitor accumsan
-            massa, in dignissim urna. Nunc ultrices tellus libero, porta
-            pellentesque.
-          </p>
-          <div class="row">
-            <div class="col-md-6">
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
+          <h2 class="pt-5" data-anime="left">Skills</h2>
+            <!-- Programming languages -->
+              <h4 class="mt-2" data-anime="left">Programming languages</h4>
+                <div data-anime="left">
+                  <img title="Python" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+                  <img title="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+                  <img title="C#" src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white">
+                  <img title="PHP" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white">
+                  <img title="Rust" src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white">
                 </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
+
+            <!-- Frameworks and libraries -->
+              <h4 class="mt-2" data-anime="left">Frameworks and libraries</h4>
+                <div data-anime="left">
+                  <img title="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white">
+                  <img title="Django" src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=green">
+                  <img title="Django Rest" src="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray">
+                  <img title="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
+                  <img title="Laravel" src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white">
                 </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
+                  
+            <!-- Tools and technologies -->
+              <h4 class="mt-2" data-anime="left">Tools and technologies</h4>
+                <div data-anime="left">
+                  <img title="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
+                  <img title="MongoDB" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white">
+                  <img title="MySQL" src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white">
+                  <img title="SQLITE" src="https://img.shields.io/badge/SQLite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white">
+                  <img title="Heroku" src="https://img.shields.io/badge/Heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white">
+                  <img title="Redis" src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white">
+                  <img title="Unity" src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white">
                 </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="w-50 me-auto ms-auto" />
-          <div class="row">
-            <div class="col-md-6">
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-              <p class="mt-3 mb-0">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+
       <section id="projects" class="mt-5">
         <div class="container pb-5 pt-5" data-anime="left">
           <h2 class="pb-4">Projects</h2>
@@ -440,12 +205,12 @@
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
-              <button
+              <!-- <button
                 type="button"
                 data-bs-target="#carouselProjects"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
-              ></button>
+              ></button> -->
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
@@ -453,32 +218,30 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/twitchhighlightsbot.png')}}"
                         class="card-img-top"
-                        alt="Project 1 Image"
+                        alt="Twich Highlights Bot project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
+                        <h5 class="card-title col-md-6">Twitch Highlights Bot</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          This Python bot uses the Twitch API to gather the most viewed clips from the previous week for a specific game.
+                          It then combines these clips into a single compilation video using the Moviepy library and uploads the final product to YouTube using the YouTube API.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">APIs</span>
+                          <span class="badge text-bg-secondary mx-1">Google Cloud</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/twitch-highlights-bot"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
+                            href="https://www.youtube.com/@mostwatchedtwitchclips"
                             target="_blank"
                             class="btn btn-outline-danger"
                             ><i class="bi bi-youtube"></i
@@ -490,35 +253,29 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/videodirectoryapi.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 2 Image"
+                        alt="Video Directory API project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
+                        <h5 class="card-title">Video Directory API</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          REST API developed using the Django Rest Framework for indexing and retrieving videos information.
+                          Data is stored in MongoDB Atlas and cached using Redis to improve performance. The API allows users to search and
+                          access information about videos, including their URLs, metadata, and categories.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">Django Rest</span>
+                          <span class="badge text-bg-secondary mx-1">MongoDB</span>
+                          <span class="badge text-bg-secondary mx-1">Redis</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/VideoDirectoryAPI"
                             target="_blank"
-                            class="btn btn-outline-dark me-3"
+                            class="btn btn-outline-dark"
                             ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -529,35 +286,33 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/twitterweatherbot.png')}}"
                         class="card-img-top"
-                        alt="Project 1 Image"
+                        alt="Twitter Weather Bot project Image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
+                        <h5 class="card-title">Twitter Weather Bot</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Twitter bot that posts daily weather forecasts utilizing the Twitter API and the Open Weather API.
+                          The bot connects to the Open Weather API to retrieve current weather data and then formats and posts
+                          the forecasts to Twitter using the Twitter API.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">APIs</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/weather-bot"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
+                            href="https://twitter.com/climasaopaulo"
                             target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
+                            class="btn btn-outline-primary"
+                            ><i class="bi bi-twitter"></i
                           ></a>
                         </div>
                       </div>
@@ -566,35 +321,32 @@
                   <div class="col">
                     <div class="card">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/twitterprofileupdater.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 2 Image"
+                        alt="Twitter profile updater project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
+                        <h5 class="card-title">Twitter Profile Updater</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Python bot that utilizes the NASA Astronomy Picture of the Day API to update a Twitter profile with stunning images of outer space.
+                          The bot runs automatically on a daily basis thanks to its deployment on Heroku, a cloud platform for hosting web applications.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                          <span class="badge text-bg-secondary mx-1">APIs</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/twitter-profile-updater"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
+                            href="https://dev.to/viniciusenari/how-i-update-my-twitter-profile-automatically-using-python-5d57"
                             target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
+                            class="btn btn-outline-dark"
+                            ><i class="bi bi-file-richtext"></i
                           ></a>
                         </div>
                       </div>
@@ -603,40 +355,29 @@
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-item" data-bs-interval="10000">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/slideshowvideomaker.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 3 Image"
+                        alt="Slidershow Moviemaker project Image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
+                        <h5 class="card-title">Slideshow Moviemaker</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Python program that utilizes the moviepy library to create slideshow videos from a collection of images and an audio track.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/slideshow-videomaker"
                             target="_blank"
-                            class="btn btn-outline-dark me-3"
+                            class="btn btn-outline-dark"
                             ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -645,35 +386,35 @@
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/discourseium.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 4 image"
+                        alt="Discourseium project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 4</h5>
+                        <h5 class="card-title">Discourseium</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Chat web application inspired by Discord using React. The app allows users to communicate with each other
+                          in real-time through text. It also includes features like the user being able to use their github profiles, and emojis.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">JavaScript</span>
+                          <span class="badge text-bg-secondary mx-1">React</span>
+                          <span class="badge text-bg-secondary mx-1">NextJS</span>
+                          <span class="badge text-bg-secondary mx-1">Vercel</span>
+                          <span class="badge text-bg-secondary mx-1">Supabase</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/discourseium"
                             target="_blank"
                             class="btn btn-outline-dark me-3"
                             ><i class="bi bi-github"></i
                           ></a>
                           <a
-                            href="#"
+                            href="https://discourseium.vercel.app/"
                             target="_blank"
-                            class="btn btn-outline-primary me-3"
+                            class="btn btn-outline-primary"
                             ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -684,32 +425,25 @@
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/battlesim.png')}}"
                         class="card-img-top img-fluid w-100"
-                        alt="Project 3 Image"
+                        alt="Battlesim project image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
+                        <h5 class="card-title">Battlesim</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Prototype of a turn-based strategy game developed using Unity. The game is a 2D top-down view of a battlefield where the player
+                          has to draft units and place them on the battlefield to fight against the enemy. Implemented features include unit movement using
+                          A* pathfinding, drag and drop unit placement, and unit's inventory management.
+
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">C#</span>
+                          <span class="badge text-bg-secondary mx-1">Unity</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-dark me-3"
-                            ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
+                            href="https://www.youtube.com/watch?v=zz7LfvRxUVE"
                             target="_blank"
                             class="btn btn-outline-danger"
                             ><i class="bi bi-youtube"></i
@@ -721,35 +455,25 @@
                   <div class="col">
                     <div class="card h-100">
                       <img
-                        src="{{url_for('static', filename='img/project_filler.jpg')}}"
+                        src="{{url_for('static', filename='img/projects/mountaincar.png')}}"
                         class="card-img-top img-fluid w-100"
                         alt="Project 4 image"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Project 4</h5>
+                        <h5 class="card-title">Q-Learnign and SARSA Mountain Car</h5>
                         <p class="card-text">
-                          Project description: Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit. Fusce fringilla volutpat
-                          ex, id ultricies nunc varius in. Duis at lectus.
+                          Python code to run two differennt reinforcement learning algorithms on the Mountain Car environment from OpenAI Gym.
+                          The algorithms used were Q-Learning and SARSA.
                         </p>
                         <div class="d-flex justify-content-center">
+                          <span class="badge text-bg-secondary mx-1">Python</span>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
                           <a
-                            href="#"
+                            href="https://github.com/viniciusenari/Q-Learning-and-SARSA-Mountain-Car-v0"
                             target="_blank"
-                            class="btn btn-outline-dark me-3"
+                            class="btn btn-outline-dark"
                             ><i class="bi bi-github"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-primary me-3"
-                            ><i class="bi bi-link-45deg"></i
-                          ></a>
-                          <a
-                            href="#"
-                            target="_blank"
-                            class="btn btn-outline-danger"
-                            ><i class="bi bi-youtube"></i
                           ></a>
                         </div>
                       </div>
@@ -758,7 +482,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item" data-bs-interval="2000">
+              <!-- <div class="carousel-item" data-bs-interval="2000">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                   <div class="col">
                     <div class="card h-100">
@@ -911,7 +635,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <button
               class="carousel-control-prev"
@@ -940,8 +664,439 @@
           </div>
         </div>
       </section>
+
+      <section id="certificates" class="mt-5 section-bg">
+        <div class="container pb-5">
+          <h2 class="pt-5" data-anime="left">Certificates</h2>
+          <div class="container">
+            <div class="row" data-anime="left">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">MongoDB Python Developer Path</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-82af9553-e513-4d36-bf12-be6eb2fa29a2-certificate.pdf"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>MongoDB</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">Django REST APIs Degree</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://cursos.alura.com.br/user/viniciusenari/degree-django-rest-162494/certificate"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>Alura</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">Connecting to a MongoDB Database</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-67c1c638-5358-4110-9c96-1bd6d2992037-certificate.pdf"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>MongoDB</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">Connecting to MongoDB in Python</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-805ecfa5-e09f-4a3c-b8c5-7647611a9470-certificate.pdf"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>MongoDB</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-2" data-anime="left">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">Getting Started with MongoDB Atlas</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-fb7ed41e-8b14-4e58-adf3-f8f68617e096-certificate.pdf"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>MongoDB</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">Introduction to MongoDB Data Modeling</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-2fbba05e-b18f-4dad-b674-239880342ba6-certificate.pdf"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>MongoDB</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">MongoDB Aggregation</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-8a9ee037-fd2f-48b2-8c57-4fe66d6db88b-certificate.pdf"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>MongoDB</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-title">MongoDB Aggregation in Python</h6>
+                      <div class="d-flex justify-content-between">
+                        <a
+                          href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-e71d8470-261f-4650-9bae-24ca65923f18-certificate.pdf"
+                          target="_blank"
+                          aria-hidden="true"
+                          class="text-primary text-decoration-none">
+                          <i class="bi bi-award"></i>
+                          Certificate
+                        </a>
+                        <span>MongoDB</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="hidden-cards" style="display: none">
+              <div class="row mt-2" data-anime="left">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">MongoDB Atlas Search</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-31794b87-fae2-43a6-9530-f246eb03ae4e-certificate.pdf"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">MongoDB CRUD Operations in Python</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-66f83359-d14a-45e9-a15b-3e32953d531e-certificate.pdf"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">MongoDB CRUD Operations: Insert and Find Documents</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-c76f1b30-0781-4154-9b55-892d74a63563-certificate.pdf"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">MongoDB CRUD Operations: Modifying Query Results</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-dcbe2ec6-b5c4-48e9-8ab2-1d9ac394d3a4-certificate.pdf"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2" data-anime="left">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">MongoDB CRUD Operations: Replace and Delete Documents</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-142733a2-0d8b-4e51-8005-dc644f7c0dc4-certificate.pdf"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">MongoDB Indexes</h6>
+                          <div class="d-flex justify-content-between">
+                            <a
+                              href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-0409658b-d3ec-48a3-99b7-e0c6dcf604dc-certificate.pdf"
+                              target="_blank"
+                              aria-hidden="true"
+                              class="text-primary text-decoration-none">
+                              <i class="bi bi-award"></i>
+                              Certificate
+                            </a>
+                            <span>MongoDB</span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">MongoDB Transactions</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-c0d060c9-0924-465e-b2d6-daf381550211-certificate.pdf"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Overview of MongoDB and the Document Model</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/123068b8-57cc-4c71-937c-f6a52501633d-vincius-enari-c9539a03-28c9-40f8-ac46-6664b5dad261-certificate.pdf"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2" data-anime="left">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Django 3 API: Django Rest Frameworks</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://cursos.alura.com.br/certificate/dc9b0d92-87b3-4bd9-807b-f2b0109dcf6b"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>Alura</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">Django 3 API: Validation, search, filters, and deploy</h6>
+                          <div class="d-flex justify-content-between">
+                            <a
+                              href="https://cursos.alura.com.br/certificate/486c3502-9c6f-4669-9b36-f78d51af79cf"
+                              target="_blank"
+                              aria-hidden="true"
+                              class="text-primary text-decoration-none">
+                              <i class="bi bi-award"></i>
+                              Certificate
+                            </a>
+                            <span>Alura</span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Django 3 API: Tests, security and refinements</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://cursos.alura.com.br/certificate/73b9330b-4078-44d9-98ae-bbdf0ac3ede2"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>Alura</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Django 3 API: Tests, and documentation</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://cursos.alura.com.br/certificate/aa3d72f9-8564-40f1-bc80-c3552a991159"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>MongoDB</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2" data-anime="left">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6 class="card-title">Django 3 API: Versioning, headers, and CORS</h6>
+                        <div class="d-flex justify-content-between">
+                          <a
+                            href="https://cursos.alura.com.br/certificate/3442a8d4-d999-4b34-a684-e4b963c44785"
+                            target="_blank"
+                            aria-hidden="true"
+                            class="text-primary text-decoration-none">
+                            <i class="bi bi-award"></i>
+                            Certificate
+                          </a>
+                          <span>Alura</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card">
+                      <div class="card-body">
+                        <h6 class="card-title">HTTP: Understading the web behind the scenes</h6>
+                          <div class="d-flex justify-content-between">
+                            <a
+                              href="https://cursos.alura.com.br/certificate/5146bbe7-2d62-4405-8e8c-cbcb98b35463"
+                              target="_blank"
+                              aria-hidden="true"
+                              class="text-primary text-decoration-none">
+                              <i class="bi bi-award"></i>
+                              Certificate
+                            </a>
+                            <span>Alura</span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="mt-2 mx-auto" id="show-more-button" data-anime="up">Show More</button>
+            </div>
+          </div>
+        </div>
+      </section>
       
-      <section id="contact" class="pt-5 pb-4 section-bg">
+      <section id="contact" class="pt-5 pb-4">
         <div class="container mb-5">
           <h2 class="pt-3 pb-3" data-anime="left">Contact me</h2>
           <div class="row">
@@ -1044,10 +1199,10 @@
     </footer>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous">
+    </script>
     <script src="../static/script.js"></script>
   </body>
 </html>
